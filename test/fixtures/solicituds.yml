@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  voluntario: one
+  organizacion_benefica: one
+  inventario: one
+  user: one
+
+two:
+  voluntario: two
+  organizacion_benefica: two
+  inventario: two
+  user: two

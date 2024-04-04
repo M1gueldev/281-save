@@ -1,0 +1,2 @@
+class Economica < ApplicationRecord
+end

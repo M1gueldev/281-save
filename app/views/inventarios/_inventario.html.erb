@@ -1,0 +1,27 @@
+<div id="<%= dom_id inventario %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Elementos:</strong>
+    <%= inventario.elementos %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cantidad:</strong>
+    <%= inventario.cantidad %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ubicacion:</strong>
+    <%= inventario.ubicacion %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Fecha:</strong>
+    <%= inventario.fecha %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this inventario", inventario, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this inventario", edit_inventario_path(inventario), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

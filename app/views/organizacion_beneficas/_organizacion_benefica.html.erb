@@ -1,0 +1,47 @@
+<div id="<%= dom_id organizacion_benefica %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nombre:</strong>
+    <%= organizacion_benefica.nombre %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tipo:</strong>
+    <%= organizacion_benefica.tipo %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Latitud:</strong>
+    <%= organizacion_benefica.latitud %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Longitud:</strong>
+    <%= organizacion_benefica.longitud %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= organizacion_benefica.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ci:</strong>
+    <%= organizacion_benefica.CI %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Economica:</strong>
+    <%= organizacion_benefica.economica_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nro de cuenta:</strong>
+    <%= organizacion_benefica.nro_de_cuenta %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this organizacion benefica", organizacion_benefica, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this organizacion benefica", edit_organizacion_benefica_path(organizacion_benefica), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

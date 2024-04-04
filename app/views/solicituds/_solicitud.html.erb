@@ -1,0 +1,27 @@
+<div id="<%= dom_id solicitud %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Voluntario:</strong>
+    <%= solicitud.voluntario_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Organizacion benefica:</strong>
+    <%= solicitud.organizacion_benefica_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Inventario:</strong>
+    <%= solicitud.inventario_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= solicitud.user_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this solicitud", solicitud, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this solicitud", edit_solicitud_path(solicitud), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

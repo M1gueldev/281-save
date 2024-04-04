@@ -1,0 +1,2 @@
+class CuentaBancarium < ApplicationRecord
+end
